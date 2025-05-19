@@ -1,0 +1,28 @@
+nav[aria-label="Breadcrumb"] {
+  .container {
+    padding: 20px;
+    overflow: auto;
+  }
+  ol {
+    @extend .flex;
+    a,
+    li {
+      @include mix.text(var.$bg-8f, 12, 4, 150%);
+      white-space: nowrap;
+    }
+    a {
+      @extend .flex;
+      transform: scale(1);
+      color: var.$bg-41;
+      &::after {
+        content: "";
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        background: url("../../images/home/sectionLinkRight.svg") no-repeat
+          center;
+        background-size: cover;
+      }
+    }
+  }
+}
