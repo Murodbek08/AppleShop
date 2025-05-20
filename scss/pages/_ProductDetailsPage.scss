@@ -1,3 +1,9 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 nav[aria-label="Breadcrumb"] {
   .container {
     padding: 20px;
@@ -5,23 +11,197 @@ nav[aria-label="Breadcrumb"] {
   }
   ol {
     @extend .flex;
+    justify-content: start;
+    gap: 16px;
     a,
     li {
-      @include mix.text(var.$bg-8f, 12, 4, 150%);
+      font-family: Inter;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 0%;
+
       white-space: nowrap;
     }
     a {
       @extend .flex;
+      gap: 16px;
       transform: scale(1);
-      color: var.$bg-41;
+      color: #a4a4a4;
       &::after {
         content: "";
         width: 24px;
         height: 24px;
         display: inline-block;
-        background: url("../../images/home/sectionLinkRight.svg") no-repeat
-          center;   
+        background: url("../../images/ProductDetailsPage/Arrow.svg") no-repeat
+          center;
         background-size: cover;
+      }
+    }
+  }
+}
+
+.productDetails {
+  margin-top: 100px;
+  &--wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+    align-items: center;
+  }
+
+  &--images {
+    display: flex;
+    gap: 48px;
+    &__minImgs {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      img {
+        width: 74.88236236572266px;
+        height: 93px;
+      }
+    }
+  }
+
+  &--info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    h3 {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: 0%;
+    }
+    &__price {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      span {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 3%;
+        &:nth-child(2) {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 32px;
+          letter-spacing: 3%;
+          vertical-align: bottom;
+          text-decoration: line-through;
+          color: #a0a0a0;
+        }
+      }
+    }
+    &__colors {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      div:nth-child(1) {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #0c0c0c;
+      }
+      div:nth-child(2) {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        span {
+          width: 32px;
+          height: 32px;
+          background: #0c0c0c;
+          border-radius: 50px;
+          &:nth-child(2) {
+            background: #781dbc;
+          }
+
+          &:nth-child(3) {
+            background: #e10000;
+          }
+
+          &:nth-child(4) {
+            background: #e1b000;
+          }
+
+          &:nth-child(5) {
+            background: #e8e8e8;
+          }
+        }
+      }
+    }
+    &__memory {
+      display: grid;
+      grid-template-columns: repeat(4, 2fr);
+      gap: 16px;
+      span {
+        padding: 16px 24px;
+        border-radius: 8px;
+        border-width: 1px;
+        text-align: center;
+        border: 1px solid #000000;
+      }
+    }
+    &__characteristic {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 16px;
+      div {
+        height: 64px;
+        padding: 16px 8px;
+        background-color: #f4f4f4;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 8px;
+        }
+        div {
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          height: auto;
+          align-items: start;
+          gap: 4px;
+          span {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0%;
+            color: #4e4e4e;
+            &:nth-child(2) {
+              font-family: Inter;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 16px;
+              letter-spacing: 0%;
+            }
+          }
+        }
+      }
+    }
+    p {
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 3%;
+      color: #6c6c6c;
+      span {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 3%;
+        text-decoration: underline;
+        color: #2c2c2c;
       }
     }
   }
