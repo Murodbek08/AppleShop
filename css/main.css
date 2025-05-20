@@ -297,3 +297,143 @@ footer .footer-contents .footer-contents-menus .footer-asisitans ul li a {
   line-height: 32px;
   letter-spacing: 0%;
 }
+
+.steps1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 88px 0;
+}
+.steps1 .step-card1 {
+  display: flex;
+  gap: 8px;
+}
+.steps1 .step-card1 h6 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.steps1 .step-card1 h4 {
+  font-size: 19px;
+  font-weight: 500;
+}
+.steps1 .step-card2 {
+  display: flex;
+  gap: 8px;
+}
+.steps1 .step-card2 h6 {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(178, 178, 178);
+}
+.steps1 .step-card2 h4 {
+  color: rgb(178, 178, 178);
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.steps2 {
+  padding: 48px 0;
+}
+.steps2 .step2-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 32px;
+}
+.steps2 .step2card {
+  padding: 24px;
+  width: 100%;
+  height: 144px;
+  border-radius: 7px;
+  background-color: rgb(246, 246, 246);
+  display: flex;
+  gap: 16px;
+  align-items: start;
+}
+.steps2 .step2card h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.steps2 .step2card h3 span {
+  background-color: rgb(0, 0, 0);
+  border-radius: 8px;
+  color: white;
+  padding: 4px 8px;
+}
+.steps2 .step2card p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.steps2 .step2-position {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.steps2 .step2-buttons {
+  display: flex;
+  gap: 24px;
+}
+.steps2 .step2-buttons button {
+  background-color: transparent;
+  border: none;
+}
+.steps2 .step-plus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.steps2 .step-button {
+  margin-top: 63px;
+  display: flex;
+  justify-content: end;
+  gap: 24px;
+}
+.steps2 .step-button button {
+  width: 208px;
+  height: 64px;
+}
+.steps2 .step-button .back {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid rgb(0, 0, 0);
+}
+.steps2 .step-button .next {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+}
+.steps2 .radio-container {
+  display: flex;
+  gap: 20px;
+}
+.steps2 .custom-radio {
+  width: 40px;
+  height: 40px;
+  border: 4px solid black;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.steps2 .custom-radio .dot {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.steps2 .custom-radio.active .dot {
+  opacity: 1;
+}

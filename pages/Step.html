@@ -1,15 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="../css/main.min.css" />
-  </head>
-  <body>
-    <header></header>
-    <footer></footer>
-    <script src="../js/products-data.js"></script>
-    <script src="../js/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="../css/main.min.css" />
+</head>
+
+<body>
+  <header></header>
+
+  <section class="step1">
+    <div class="container">
+      <div class="steps1">
+        <div class="step-card1">
+          <img src="../images/Step/location.svg" alt="?">
+          <div class="step-card1-text">
+            <h6>Step 1</h6>
+            <h4>Address</h4>
+          </div>
+        </div>
+
+        <div class="step-card2">
+          <img src="../images/Step/cart.svg" alt="?">
+          <div class="step-card2-text">
+            <h6>Step 2</h6>
+            <h4>Shipping</h4>
+          </div>
+        </div>
+        <div class="step-card2">
+          <img src="../images/Step/pay.svg" alt="?">
+          <div class="step-card2-text">
+            <h6>Step 3</h6>
+            <h4>Payment</h4>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="steps2">
+        <h2>Select Address</h2>
+        <div class="step2-cards">
+          <div class="step2card">
+            <div class="radio-container">
+              <div class="custom-radio" data-value="1">
+                <div class="dot"></div>
+              </div>
+            </div>
+            <div class="step2-position">
+              <div class="steps2-content">
+                <h3>2118 Thornridge <span>HOME</span></h3>
+                <p>2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
+                <p>(209) 555-0104</p>
+              </div>
+              <div class="step2-buttons">
+                <button><img src="../images/Step/edit.svg" alt="?"></button>
+                <button><img src="../images/Step/close.svg" alt="?"></button>
+              </div>
+            </div>
+          </div>
+          <div class="step2card">
+            <div class="radio-container">
+              <div class="custom-radio" data-value="1">
+                <div class="dot"></div>
+              </div>
+            </div>
+            <div class="step2-position">
+              <div class="steps2-content">
+                <h3>Headoffice <span>OFFICE</span></h3>
+                <p>2715 Ash Dr. San Jose, South Dakota 83475</p>
+                <p>(704) 555-0127</p>
+              </div>
+              <div class="step2-buttons">
+                <button><img src="../images/Step/edit.svg" alt="?"></button>
+                <button><img src="../images/Step/close.svg" alt="?"></button>
+              </div>
+            </div>
+          </div>
+          <div class="step-plus">
+            <img src="../images/Step/plus.svg" alt="?">
+            <h3>Add New Address</h3>
+          </div>
+        </div>
+
+        <div class="step-button">
+          <button class="back">Back</button>
+          <button class="next">Next</button>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <footer></footer>
+
+  <script src="../js/products-data.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/step.js"></script>
+</body>
+
 </html>
