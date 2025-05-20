@@ -14,7 +14,7 @@ const products = [
     ],
     brand: "Apple",
     specs: {
-      screenSize: "13.3\u2033",
+      screenSize: "13.3",
       cpu: "Apple M2",
       cores: 8,
       ram: "8GB",
@@ -36,7 +36,7 @@ const products = [
     ],
     brand: "Apple",
     specs: {
-      screenSize: "13.3\u2033",
+      screenSize: "13.3",
       cpu: "Apple M2",
       cores: 8,
       ram: "8GB",
@@ -58,7 +58,7 @@ const products = [
     ],
     brand: "Apple",
     specs: {
-      screenSize: "13.3\u2033",
+      screenSize: "13.3",
       cpu: "Apple M2",
       cores: 8,
       ram: "8GB",
@@ -80,7 +80,7 @@ const products = [
     ],
     brand: "Apple",
     specs: {
-      screenSize: "13.3\u2033",
+      screenSize: "13.3",
       cpu: "Apple M2",
       cores: 8,
       ram: "8GB",
@@ -102,7 +102,7 @@ const products = [
     ],
     brand: "Apple",
     specs: {
-      screenSize: "13.3\u2033",
+      screenSize: "13.3",
       cpu: "Apple M2",
       cores: 8,
       ram: "8GB",
@@ -124,7 +124,7 @@ const products = [
     ],
     brand: "Apple",
     specs: {
-      screenSize: "13.3\u2033",
+      screenSize: "13.3",
       cpu: "Apple M2",
       cores: 8,
       ram: "8GB",
@@ -146,7 +146,7 @@ const products = [
     ],
     brand: "Apple",
     specs: {
-      screenSize: "13.3\u2033",
+      screenSize: "13.3",
       cpu: "Apple M2",
       cores: 8,
       ram: "8GB",
@@ -168,7 +168,7 @@ const products = [
     ],
     brand: "Apple",
     specs: {
-      screenSize: "13.3\u2033",
+      screenSize: "13.3",
       cpu: "Apple M2",
       cores: 8,
       ram: "8GB",
@@ -190,7 +190,7 @@ const products = [
     ],
     brand: "Apple",
     specs: {
-      screenSize: "13.3\u2033",
+      screenSize: "13.3",
       cpu: "Apple M2",
       cores: 8,
       ram: "8GB",
@@ -212,7 +212,7 @@ const products = [
     ],
     brand: "Apple",
     specs: {
-      screenSize: "13.3\u2033",
+      screenSize: "13.3",
       cpu: "Apple M2",
       cores: 8,
       ram: "8GB",
